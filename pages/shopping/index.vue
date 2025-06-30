@@ -1,0 +1,3 @@
+<template>
+    shopping pages
+</template>
