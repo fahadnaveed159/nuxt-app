@@ -1,15 +1,20 @@
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import { useUserStore } from '~/store/userStore'
 
 // Nuxt middleware
 export default defineNuxtRouteMiddleware((to, from) => {
-  const auth = getAuth()
-  const user = auth.currentUser
+  const store = useUserStore()
 
   // ✅ Pages allowed without login
-  const publicPages = ['/login', '/signup']
+  const restrictedRoutes = ['/shopping', '/cart', '/checkout', '/']
 
   // 🔒 If user not logged in and trying to access private page
-  if (!publicPages.includes(to.path) && !user) {
+  if (restrictedRoutes.includes(to.path) && !store.isAuthenticated) {
     return navigateTo('/login')
+  }
+
+  // 🔑 If user logged in and trying to access login/signup page
+  if (store.isAuthenticated && (to.path === '/login' || to.path === '/signup')) {
+    return navigateTo('/')
   }
 })
