@@ -1,30 +1,30 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import { initializeApp } from 'firebase/app'
+import { getAuth,onAuthStateChanged  } from 'firebase/auth'
 
-
-export default defineNuxtPlugin(nuxtApp => {
-    const config = useRuntimeConfig()
-
-    const firebaseConfig = {
-         apiKey: "AIzaSyAopQL-sh_8hrAmApIoEFAhlNJUsgem18o",
+export default defineNuxtPlugin(() => {
+  // Firebase ka configuration object (console.firebase.google.com se milega)
+  const firebaseConfig = {
+       apiKey: "AIzaSyAopQL-sh_8hrAmApIoEFAhlNJUsgem18o",
   authDomain: "shopping-list-app-e67da.firebaseapp.com",
   projectId: "shopping-list-app-e67da",
   storageBucket: "shopping-list-app-e67da.firebasestorage.app",
   messagingSenderId: "454827217815",
   appId: "1:454827217815:web:87811528d8595263ae6ad2",
   measurementId: "G-TVZCZ9JMT6"
-}
+  }
 
-    const app = initializeApp(firebaseConfig)
+  // Firebase app initialize kar rahe hain
+  const app = initializeApp(firebaseConfig)
 
-    // const analytics = getAnalytics(app)
-    const auth = getAuth(app)
-    const firestore = getFirestore(app)
+  // Firebase Authentication service le rahe hain
+  const auth = getAuth(app)
 
-    nuxtApp.vueApp.provide('auth', auth)
-    nuxtApp.provide('auth', auth)
+  
 
-    nuxtApp.vueApp.provide('firestore', firestore)
-    nuxtApp.provide('firestore', firestore)
-})  
+  // Nuxt app me provide kar rahe hain taake har jaga use ho sake
+  return {
+    provide: {
+      auth
+    }
+  }
+})
