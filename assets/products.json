@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1475,
+        "name": "Grey Flannel Check Shirt",
+        "description": "Soft, stylish, and timeless — this Grey Flannel Check Shirt is perfect for cool days and casual looks. Made with cozy fabric and a classic check pattern, it's your go-to pick for effortless style.",
+        "price": "800 ",
+        "image": "/be14662f-aa9c-4376-a59b-b3cddcc6f40b.jfif",
+        "sizes": ["M", "L", "XL"]
+
+
+
+    },
+    {
+        "id": 1476,
+        "name": "Midnight Blue Denim",
+        "description": "Bold, sleek, and built for everyday wear — the Midnight Blue Denim brings effortless style to your wardrobe. Its deep blue tone pairs perfectly with any outfit, making it your all-season essential.",
+        "price": "850 ",
+        "image": "/tyyyyyy.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1477,
+        "name": "Dark Grid Casual Shirt",
+        "description": "Stay sharp in style with the Dark Grid Casual Shirt — featuring a bold grid pattern on a deep-toned fabric. Perfect for everyday casual looks with just the right touch of edge and confidence.",
+        "price": "1200 ",
+        "image": "/dark shirt.png.jfif",
+        "sizes": ["S", "L", "XL"]
+
+    },
+    {
+        "id": 1478,
+        "name": "Urban Fit Black Trousers",
+        "description": "Smart, sleek, and city-ready — the Urban Fit Black Trousers offer a perfect blend of comfort and modern style. With a tailored silhouette and versatile black tone, they’re your go-to for both casual and semi-formal looks.",
+        "price": "900 ",
+        "image": "/28b2952b-7143-4e26-9eca-6a6dc864a7fc.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1479,
+        "name": "Rosewood Maxi",
+        "description": "Grace meets charm in the Rosewood Maxi — a flowing silhouette in a deep rosewood hue, designed to make you stand out effortlessly. Soft, feminine, and timeless — perfect for evenings, brunches, or festive occasions.",
+        "price": "1500 ",
+        "image": "/972c9af2-0446-4a63-9295-5355d9ac9c15.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1480,
+        "name": "Noir Elegance Dress9",
+        "description": "Step into sophistication with the Noir Elegance Dress — a sleek black statement piece that blends modern grace with timeless charm. Perfect for evening events, formal dinners, or a bold night out.",
+        "price": "950 ",
+        "image": "/Johanna™ - Die Elegante knitterfreie Hose für….jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1481,
+        "name": "Skin Checkered Shirt",
+        "description": "Add a bold touch to your wardrobe with the Skin Checkered Shirt — featuring a classic pattern in vibrant skin tones. Whether styled casually or layered up, it brings effortless attitude to your everyday look.",
+        "price": "1350 ",
+        "image": "/Discover Your New Wardrobe Essential Elevate your….jfif",
+        "sizes": ["S", "L", "XL"]
+
+    },
+    {
+        "id": 1482,
+        "name": "Black Casual Pant",
+        "description": "Stay cool and confident in the Black Casual Pant — crafted for comfort with a sleek black hue that’s perfect for daily wear. Pair it with a casual shirt or tee for a relaxed yet refined look.",
+        "price": "999 ",
+        "image": "/6410853f-fb61-4c96-b60d-9b72baa785ec.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1483,
+        "name": "Silver Executive Edge Suit",
+        "description": "Command attention with the Silver Executive Edge Suit — a modern power look crafted for the bold professional. With its sharp tailoring and sleek silver finish, this suit defines elegance with authority.",
+        "price": "8699",
+        "image": "/122ac39a-47e2-4c4f-bcd4-c490f8394251.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1484,
+        "name": "Elegant Black Tuxedo",
+        "description": "Redefine sophistication with the Elegant Black Tuxedo — a timeless classic tailored for formal excellence. With its crisp silhouette and sleek black finish, it's the ultimate statement for weddings, galas, and black-tie events.",
+        "price": "3999",
+        "image": "/dfe90b93-5368-40bf-a7a2-d688a0552aba.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1485,
+        "name": "Classic White Shirt",
+        "description": "Elevate your essentials with the Classic White Shirt — a wardrobe staple that never goes out of style. Perfectly tailored for a crisp, clean look, it’s versatile enough for both casual and formal occasions.",
+        "price": "2999",
+        "image": "/c3088f65-7617-46d0-9b46-c3ee72e36150.jfif",
+        "sizes": ["M", "L", "XL"]
+
+    },
+    {
+        "id": 1486,
+        "name": "Brown Elegant Blazer",
+        "description": "Step up your style game with the Brown Elegant Blazer — a versatile piece that adds a touch of sophistication to any outfit. Perfect for both work and play, it’s your go-to for a polished look.",
+        "price": "8700",
+        "image": "/Explore the latest trends in mens winter fashion….jfif",
+        "sizes": ["M", "L", "XL"]
+
+    }
+]

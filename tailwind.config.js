@@ -8,7 +8,12 @@ export default {
     './plugins/**/*.{js,ts}', // Include plugins
   ],
   theme: {
-    extend: {},
+    extend: {
+       fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+        poppins: ['Poppins', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

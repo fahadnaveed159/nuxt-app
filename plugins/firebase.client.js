@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app'
-import { getAuth,onAuthStateChanged  } from 'firebase/auth'
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
 
 export default defineNuxtPlugin(() => {
   // Firebase ka configuration object (console.firebase.google.com se milega)
@@ -13,18 +14,22 @@ export default defineNuxtPlugin(() => {
   measurementId: "G-TVZCZ9JMT6"
   }
 
+  
+
   // Firebase app initialize kar rahe hain
   const app = initializeApp(firebaseConfig)
 
   // Firebase Authentication service le rahe hain
   const auth = getAuth(app)
-
   
+  // Initialize Firestore
+   const db = getFirestore(app);
 
   // Nuxt app me provide kar rahe hain taake har jaga use ho sake
   return {
     provide: {
-      auth
+      firestore: () => db,
+      auth: () => auth
     }
   }
 })
