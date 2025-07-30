@@ -6,7 +6,7 @@ export default defineNuxtPlugin(() => {
   // Firebase ka configuration object (console.firebase.google.com se milega)
   const firebaseConfig = {
        apiKey: "AIzaSyAopQL-sh_8hrAmApIoEFAhlNJUsgem18o",
-  authDomain: "shopping-list-app-e67da.firebaseapp.com",
+  authDomain: "nuxt-app-liart.vercel.app	",
   projectId: "shopping-list-app-e67da",
   storageBucket: "shopping-list-app-e67da.firebasestorage.app",
   messagingSenderId: "454827217815",

@@ -9,19 +9,19 @@
       </div>
 
       
-      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-2">Welcome to F.K <br> Clothes</h2>
-      <p class="text-center text-gray-500 text-sm mb-6">Login to continue your shopping </p>
+      <h2 class="mb-2 text-2xl font-semibold text-center text-gray-800">Welcome to F.K <br> Clothes</h2>
+      <p class="mb-6 text-sm text-center text-gray-500">Login to continue your shopping </p>
 
     <form @submit.prevent="loginUser" class="space-y-4">
       <input v-model="email" type="email" placeholder="Email"  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400" />
       <input v-model="password" type="password" placeholder="Password" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400" />
       <div v-if="error" class="text-red-500">{{ error }}</div>
-      <button           class="w-full bg-blue-500 text-white py-3 rounded-xl hover:bg-blue-600 transition-all"
+      <button           class="w-full py-3 text-white transition-all bg-blue-500 rounded-xl hover:bg-blue-600"
 >Login</button>
     
       
     </form>
-    <div class="mt-6 text-center text-sm text-gray-500">
+    <div class="mt-6 text-sm text-center text-gray-500">
         Don't have an account?
         <NuxtLink to="/signup" class="text-blue-600 hover:underline">Sign up</NuxtLink>
       </div>
