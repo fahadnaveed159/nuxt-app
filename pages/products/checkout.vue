@@ -1,21 +1,21 @@
 <template>
   <div class="h-[700px] py-4 animate__animated animate__bounceInLeft">
-    <div class="max-w-7xl mx-auto h-full flex justify-between items-center">
+    <div class="flex items-center justify-between h-full mx-auto max-w-7xl">
       <div class="w-3/5 h-full overflow-auto">
         <div class="p-5">
           <div class="py-4">
-            <h1 class="font-medium text-xl py-2">Contact</h1>
+            <h1 class="py-2 text-xl font-medium">Contact</h1>
             <input
               v-model="form.email"
               type="email"
               placeholder="Email or mobile phone number"
-              class="w-full p-4 py-3 mt-2 mb-3 rounded border"
+              class="w-full p-4 py-3 mt-2 mb-3 border rounded"
             />
             <input type="checkbox" class="w-4 h-4" />
             <label for="" class="p-3 py-2">Email me with news and offers</label>
           </div>
           <div class="py-4 space-y-5">
-            <h1 class="text-xl py-3 font-medium">Delivery</h1>
+            <h1 class="py-3 text-xl font-medium">Delivery</h1>
             <input
               v-model="form.country"
               list="country"
@@ -78,18 +78,18 @@
               >Save this information for next time</label
             >
             <div class="py-4">
-              <h1 class="font-medium text-base py-2">Shipping method</h1>
+              <h1 class="py-2 text-base font-medium">Shipping method</h1>
               <input
                 type="number"
                 placeholder="Standard  Rs.200.00"
-                class="w-full p-4 py-3 mt-2 mb-3 rounded border"
+                class="w-full p-4 py-3 mt-2 mb-3 border rounded"
               />
             </div>
             <div class="mb-8">
-              <h2 class="text-xl font-semibold mb-3">Payment Method</h2>
+              <h2 class="mb-3 text-xl font-semibold">Payment Method</h2>
               <select
                 v-model="form.paymentMethod"
-                class="border p-3 w-full rounded"
+                class="w-full p-3 border rounded"
               >
                 <option disabled value="">Select Payment Method</option>
                 <option>Cash on Delivery</option>
@@ -97,7 +97,7 @@
                 <option>EasyPaisa / JazzCash</option>
               </select>
             </div>
-            <div class="flex justify-center items-center py-4">
+            <div class="flex items-center justify-center py-4">
               <button
                 @click="placeOrder"
                 class="bg-[#D1A980] text-white py-3 transition-all font-medium ease-out delay-150 duration-200 scale-100 w-full rounded hover:bg-black hover:text-white"
@@ -110,32 +110,32 @@
       </div>
 
       <!-- Order Summary -->
-      <div class="w-2/5 h-full overflow-auto rounded bg-[#F1F0E9] shadow-lg p-5">
-        <h2 class="text-2xl text-center py-2 font-semibold mb-3">
+      <div class="w-2/5 h-full p-5 overflow-auto rounded shadow-lg bg-gray-50">
+        <h2 class="py-2 mb-3 text-2xl font-semibold text-center">
           Order Summary
         </h2>
         <div
           v-for="item in cartStor.cart"
           :key="item.product.id + item.selectedSize"
-          class="flex justify-between items-center p-3 mb-2"
+          class="flex items-center justify-between p-3 mb-2"
         >
           <img :src="item.product.image" class="w-16 h-16 rounded" />
           <p>{{ item.product.name }} ({{ item.selectedSize }})</p>
           <p>Quantity: {{ item.quantity }}</p>
           <p>Rs. {{ item.product.price * item.quantity }}</p>
         </div>
-        <div class="flex justify-between items-center py-2 font-medium">
+        <div class="flex items-center justify-between py-2 font-medium">
           <p>Total Price:</p>
           Rs .
           {{ totalPrice }}
         </div>
-        <div class="flex justify-between items-center py-2 font-medium">
+        <div class="flex items-center justify-between py-2 font-medium">
           <p>Shipping:</p>
           Rs .
           {{ shipping }}
         </div>
         <div
-          class="flex justify-between items-center py-2 text-2xl mt-4 font-bold"
+          class="flex items-center justify-between py-2 mt-4 text-2xl font-bold"
         >
           <p>Total</p>
           Rs .
